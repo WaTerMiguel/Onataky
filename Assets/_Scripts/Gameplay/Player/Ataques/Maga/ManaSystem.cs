@@ -57,68 +57,10 @@ public class ManaSystem : MonoBehaviour
     }
 
     private void Update()
-    { 
+    {
+        #region AttackBasico
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            qualAtaque = 0;
-            material.mainTexture = texturesCajado[0];
-            material.color = coresAtaques[qualAtaque];
-            if (HabilidadeTrocada != null)
-            {
-                HabilidadeTrocada(qualAtaque);
-            }
-            if (podeUsarSkill[qualAtaque])
-            {
-                usouSkill = true;
-                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola * 1.5f);
-            }
-            else
-            {
-                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            qualAtaque = 1;
-            material.mainTexture = texturesCajado[1];
-            material.color = coresAtaques[qualAtaque];
-            if (HabilidadeTrocada != null)
-            {
-                HabilidadeTrocada(qualAtaque);
-            }
-            if (podeUsarSkill[qualAtaque])
-            {
-                usouSkill = true;
-                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola * 2f);
-            }
-            else
-            {
-                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            qualAtaque = 2;
-            material.mainTexture = texturesCajado[2];
-            material.color = coresAtaques[qualAtaque];
-            if (HabilidadeTrocada != null)
-            {
-                HabilidadeTrocada(qualAtaque);
-            }
-            if (podeUsarSkill[qualAtaque])
-            {
-                usouSkill = true;
-                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola * 1.5f);
-            }
-            else
-            {
-                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola);
-            }
-
-        }
-
-        if (actions.input.Player.Tiro.IsPressed() && podeAtacar == true)
+        if (actions.AttackButton() && podeAtacar == true)
         {
             if (usouSkill == false)
             {
@@ -148,7 +90,82 @@ public class ManaSystem : MonoBehaviour
             }
         }
 
+        #endregion
+
+        #region Skill01
+
+        if (actions.Skill01ButtonDown())
+        {
+            qualAtaque = 0;
+            material.mainTexture = texturesCajado[0];
+            material.color = coresAtaques[qualAtaque];
+            if (HabilidadeTrocada != null)
+            {
+                HabilidadeTrocada(qualAtaque);
+            }
+            if (podeUsarSkill[qualAtaque])
+            {
+                usouSkill = true;
+                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola * 1.5f);
+            }
+            else
+            {
+                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola);
+            }
+        }
+
+        #endregion
+
+        #region Skill02
+
+        if (actions.Skill02ButtonDown())
+        {
+            qualAtaque = 1;
+            material.mainTexture = texturesCajado[1];
+            material.color = coresAtaques[qualAtaque];
+            if (HabilidadeTrocada != null)
+            {
+                HabilidadeTrocada(qualAtaque);
+            }
+            if (podeUsarSkill[qualAtaque])
+            {
+                usouSkill = true;
+                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola * 2f);
+            }
+            else
+            {
+                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola);
+            }
+        }
+
+        #endregion
+
+        #region Skill03
+
+        if (actions.Skill03ButtonDown())
+        {
+            qualAtaque = 2;
+            material.mainTexture = texturesCajado[2];
+            material.color = coresAtaques[qualAtaque];
+            if (HabilidadeTrocada != null)
+            {
+                HabilidadeTrocada(qualAtaque);
+            }
+            if (podeUsarSkill[qualAtaque])
+            {
+                usouSkill = true;
+                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola * 1.5f);
+            }
+            else
+            {
+                material.SetColor("_EmissionColor", coresAtaques[qualAtaque] * brilhoBola);
+            }
+
+        }
+
+        #endregion
     }
+
 
     void TempoSkill(int qualSkill)
     {

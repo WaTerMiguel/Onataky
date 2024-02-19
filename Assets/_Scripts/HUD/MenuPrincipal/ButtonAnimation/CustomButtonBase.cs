@@ -4,21 +4,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class CustomButtonBase : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class CustomButtonBase : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
-    public Animator anim;
-    private void Start()
-    {
-        anim.Play("OnStatic");
-    }
 
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
-        anim.Play("OnMove");
+        MouseEntrou();
+    }
+
+    public virtual void MouseEntrou()
+    {
+        
     }
 
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
     {
-        anim.Play("OnStatic");
+        MouseSaiu();
+    }
+
+    public virtual void MouseSaiu()
+    {
+
+    }
+
+    void IPointerMoveHandler.OnPointerMove(PointerEventData eventData)
+    {
+        MouseMexeu();
+    }
+
+    public virtual void MouseMexeu()
+    {
+
     }
 }

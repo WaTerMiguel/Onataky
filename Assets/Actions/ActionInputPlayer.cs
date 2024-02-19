@@ -24,7 +24,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
     ""name"": ""ActionInputPlayer"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""PlayerWASD"",
             ""id"": ""e236c7f4-68fc-494d-9750-4d5c8c6a4c2a"",
             ""actions"": [
                 {
@@ -46,9 +46,27 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dash"",
+                    ""name"": ""Skill01"",
                     ""type"": ""Button"",
-                    ""id"": ""d9243d24-3328-4db7-8b29-2f2b0259f9b2"",
+                    ""id"": ""970d7778-38f1-4404-aa0d-e5cb4f9dc732"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill02"",
+                    ""type"": ""Button"",
+                    ""id"": ""f7114212-1776-426d-9802-daa67f02f477"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill03"",
+                    ""type"": ""Button"",
+                    ""id"": ""b3a72139-14ca-4c79-8c06-6d45c046374a"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -112,8 +130,105 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""925ab187-110c-464a-a866-1a380fd692e1"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tiro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7f0843b-6f12-4e39-939c-6ef48967a442"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9e892ca-add8-4134-b711-3018cd66401c"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b873518b-78b4-47ec-abed-8b763fecc9c4"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PlayerSETAS"",
+            ""id"": ""6be11fba-2cdd-4dc0-9565-1787b8f2bca4"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Button"",
+                    ""id"": ""617996c0-1049-4f37-b7cb-7a5b03309aa5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Tiro"",
+                    ""type"": ""Button"",
+                    ""id"": ""40a730d6-8b56-4ea2-8695-acbe5ddfa2b7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill01"",
+                    ""type"": ""Button"",
+                    ""id"": ""e7c5fa8b-1e9f-4275-84e1-d39d1df9d592"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill02"",
+                    ""type"": ""Button"",
+                    ""id"": ""309b3ba1-8972-4d10-83c1-e310a386bd4a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill03"",
+                    ""type"": ""Button"",
+                    ""id"": ""50b0b566-1667-4a86-a0bf-61f786c57c04"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
                     ""name"": ""Setas"",
-                    ""id"": ""4766e0b5-e1da-4242-bd39-866042869599"",
+                    ""id"": ""7f9ae56b-8e0e-43b8-8a8e-ca7afef26fc4"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -124,7 +239,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""6c9a56e5-a766-46c9-9e84-7131ff3c9268"",
+                    ""id"": ""c3ed081f-4572-44a3-aab4-2eaff605e6c1"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -135,7 +250,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""5d5172b3-c042-4f4f-8eae-2195ee800de4"",
+                    ""id"": ""ab9282c5-7397-4f94-b7e5-afaafe14d6e4"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -146,7 +261,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""c589df0a-00f5-4266-a5b2-fc37ea719198"",
+                    ""id"": ""96141157-6ffc-4b52-9126-12c66998d898"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -157,7 +272,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""55ed889d-5e1d-41e9-9362-7885a1cc4fea"",
+                    ""id"": ""a865a70e-b8bf-4349-a12b-4527230b608b"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -168,8 +283,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""925ab187-110c-464a-a866-1a380fd692e1"",
-                    ""path"": ""<Keyboard>/j"",
+                    ""id"": ""2714bd63-768e-4f9d-80de-f126b565c2a9"",
+                    ""path"": ""<Keyboard>/numpad1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -179,8 +294,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""94a729c7-0ba4-4eec-bd6d-0ce664a14ff1"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""id"": ""b3d42d4b-0290-43cc-8cfa-13bf0ae0d262"",
+                    ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -190,8 +305,182 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0d11cd5c-e10d-4dd1-9feb-1e7485e07e0b"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""id"": ""3735b00a-191d-4910-b695-ee2a648c723e"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dcf0630c-1799-4df6-82ac-7e102e8e7f0a"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""af009753-d958-441d-9329-98b1f27dddbc"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""afa96108-561b-4e14-9ade-274009f3e7eb"",
+                    ""path"": ""<Keyboard>/numpad5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""07f727f4-be70-43ad-832e-febb21ec0c65"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eef1aea1-524f-4dd7-926f-266f2dd7b8d6"",
+                    ""path"": ""<Keyboard>/numpad6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PlayerCONTROLE"",
+            ""id"": ""a4e145d7-98a6-43e7-95d2-c3397c079858"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""d11fdab6-5dcb-4fb7-8cfa-5133fcd4909c"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Tiro"",
+                    ""type"": ""Button"",
+                    ""id"": ""6ccf3fcf-a35b-43a8-89af-b1289bfbe1f1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill01"",
+                    ""type"": ""Button"",
+                    ""id"": ""83f441ca-9dd3-4959-a6d3-fc132fce5dd6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill02"",
+                    ""type"": ""Button"",
+                    ""id"": ""d3023aa2-8233-47c5-9e99-01176b8d7401"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill03"",
+                    ""type"": ""Button"",
+                    ""id"": ""f892db76-5ce0-46c8-b942-e1a1644a7fd5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Joystick"",
+                    ""id"": ""7793977e-c2db-4c03-b0fb-2f30df4e6491"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""b14b0bb5-4b9c-454b-ba0d-73429155bc3e"",
+                    ""path"": ""<Joystick>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""7018c8ab-fb67-4d10-bd55-e5c929ea6aa5"",
+                    ""path"": ""<Joystick>/stick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""50f40e87-d220-4e65-be11-edd16dbe80fc"",
+                    ""path"": ""<Joystick>/stick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""7fe4841e-569a-4efa-8db5-66d9cad4feca"",
+                    ""path"": ""<Joystick>/stick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cdfc33c6-7d5a-4b1c-b86d-6cc3b3d48727"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -201,34 +490,34 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f24c838d-0ba6-4789-8cdb-b39f84884f09"",
-                    ""path"": ""<Keyboard>/k"",
+                    ""id"": ""941eaf23-3e22-438a-b570-717508a79bef"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Skill01"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7011f99f-3163-4150-909f-94793f7fdda1"",
-                    ""path"": ""<Keyboard>/z"",
+                    ""id"": ""a07d8e8e-3a0b-4f3b-a200-51c751469ea8"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Skill02"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c7969541-8998-4465-994b-553a8e126703"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""id"": ""7c07a706-8c7a-4d9a-971c-c9f90a7de946"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Skill03"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -237,11 +526,27 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Tiro = m_Player.FindAction("Tiro", throwIfNotFound: true);
-        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        // PlayerWASD
+        m_PlayerWASD = asset.FindActionMap("PlayerWASD", throwIfNotFound: true);
+        m_PlayerWASD_Move = m_PlayerWASD.FindAction("Move", throwIfNotFound: true);
+        m_PlayerWASD_Tiro = m_PlayerWASD.FindAction("Tiro", throwIfNotFound: true);
+        m_PlayerWASD_Skill01 = m_PlayerWASD.FindAction("Skill01", throwIfNotFound: true);
+        m_PlayerWASD_Skill02 = m_PlayerWASD.FindAction("Skill02", throwIfNotFound: true);
+        m_PlayerWASD_Skill03 = m_PlayerWASD.FindAction("Skill03", throwIfNotFound: true);
+        // PlayerSETAS
+        m_PlayerSETAS = asset.FindActionMap("PlayerSETAS", throwIfNotFound: true);
+        m_PlayerSETAS_Move = m_PlayerSETAS.FindAction("Move", throwIfNotFound: true);
+        m_PlayerSETAS_Tiro = m_PlayerSETAS.FindAction("Tiro", throwIfNotFound: true);
+        m_PlayerSETAS_Skill01 = m_PlayerSETAS.FindAction("Skill01", throwIfNotFound: true);
+        m_PlayerSETAS_Skill02 = m_PlayerSETAS.FindAction("Skill02", throwIfNotFound: true);
+        m_PlayerSETAS_Skill03 = m_PlayerSETAS.FindAction("Skill03", throwIfNotFound: true);
+        // PlayerCONTROLE
+        m_PlayerCONTROLE = asset.FindActionMap("PlayerCONTROLE", throwIfNotFound: true);
+        m_PlayerCONTROLE_Move = m_PlayerCONTROLE.FindAction("Move", throwIfNotFound: true);
+        m_PlayerCONTROLE_Tiro = m_PlayerCONTROLE.FindAction("Tiro", throwIfNotFound: true);
+        m_PlayerCONTROLE_Skill01 = m_PlayerCONTROLE.FindAction("Skill01", throwIfNotFound: true);
+        m_PlayerCONTROLE_Skill02 = m_PlayerCONTROLE.FindAction("Skill02", throwIfNotFound: true);
+        m_PlayerCONTROLE_Skill03 = m_PlayerCONTROLE.FindAction("Skill03", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -300,40 +605,50 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Player
-    private readonly InputActionMap m_Player;
-    private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
-    private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Tiro;
-    private readonly InputAction m_Player_Dash;
-    public struct PlayerActions
+    // PlayerWASD
+    private readonly InputActionMap m_PlayerWASD;
+    private List<IPlayerWASDActions> m_PlayerWASDActionsCallbackInterfaces = new List<IPlayerWASDActions>();
+    private readonly InputAction m_PlayerWASD_Move;
+    private readonly InputAction m_PlayerWASD_Tiro;
+    private readonly InputAction m_PlayerWASD_Skill01;
+    private readonly InputAction m_PlayerWASD_Skill02;
+    private readonly InputAction m_PlayerWASD_Skill03;
+    public struct PlayerWASDActions
     {
         private @ActionInputPlayer m_Wrapper;
-        public PlayerActions(@ActionInputPlayer wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Tiro => m_Wrapper.m_Player_Tiro;
-        public InputAction @Dash => m_Wrapper.m_Player_Dash;
-        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public PlayerWASDActions(@ActionInputPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_PlayerWASD_Move;
+        public InputAction @Tiro => m_Wrapper.m_PlayerWASD_Tiro;
+        public InputAction @Skill01 => m_Wrapper.m_PlayerWASD_Skill01;
+        public InputAction @Skill02 => m_Wrapper.m_PlayerWASD_Skill02;
+        public InputAction @Skill03 => m_Wrapper.m_PlayerWASD_Skill03;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerWASD; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
-        public void AddCallbacks(IPlayerActions instance)
+        public static implicit operator InputActionMap(PlayerWASDActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerWASDActions instance)
         {
-            if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_PlayerWASDActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerWASDActionsCallbackInterfaces.Add(instance);
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
             @Tiro.started += instance.OnTiro;
             @Tiro.performed += instance.OnTiro;
             @Tiro.canceled += instance.OnTiro;
-            @Dash.started += instance.OnDash;
-            @Dash.performed += instance.OnDash;
-            @Dash.canceled += instance.OnDash;
+            @Skill01.started += instance.OnSkill01;
+            @Skill01.performed += instance.OnSkill01;
+            @Skill01.canceled += instance.OnSkill01;
+            @Skill02.started += instance.OnSkill02;
+            @Skill02.performed += instance.OnSkill02;
+            @Skill02.canceled += instance.OnSkill02;
+            @Skill03.started += instance.OnSkill03;
+            @Skill03.performed += instance.OnSkill03;
+            @Skill03.canceled += instance.OnSkill03;
         }
 
-        private void UnregisterCallbacks(IPlayerActions instance)
+        private void UnregisterCallbacks(IPlayerWASDActions instance)
         {
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
@@ -341,30 +656,210 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
             @Tiro.started -= instance.OnTiro;
             @Tiro.performed -= instance.OnTiro;
             @Tiro.canceled -= instance.OnTiro;
-            @Dash.started -= instance.OnDash;
-            @Dash.performed -= instance.OnDash;
-            @Dash.canceled -= instance.OnDash;
+            @Skill01.started -= instance.OnSkill01;
+            @Skill01.performed -= instance.OnSkill01;
+            @Skill01.canceled -= instance.OnSkill01;
+            @Skill02.started -= instance.OnSkill02;
+            @Skill02.performed -= instance.OnSkill02;
+            @Skill02.canceled -= instance.OnSkill02;
+            @Skill03.started -= instance.OnSkill03;
+            @Skill03.performed -= instance.OnSkill03;
+            @Skill03.canceled -= instance.OnSkill03;
         }
 
-        public void RemoveCallbacks(IPlayerActions instance)
+        public void RemoveCallbacks(IPlayerWASDActions instance)
         {
-            if (m_Wrapper.m_PlayerActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PlayerWASDActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IPlayerActions instance)
+        public void SetCallbacks(IPlayerWASDActions instance)
         {
-            foreach (var item in m_Wrapper.m_PlayerActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PlayerWASDActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_PlayerActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PlayerWASDActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public PlayerActions @Player => new PlayerActions(this);
-    public interface IPlayerActions
+    public PlayerWASDActions @PlayerWASD => new PlayerWASDActions(this);
+
+    // PlayerSETAS
+    private readonly InputActionMap m_PlayerSETAS;
+    private List<IPlayerSETASActions> m_PlayerSETASActionsCallbackInterfaces = new List<IPlayerSETASActions>();
+    private readonly InputAction m_PlayerSETAS_Move;
+    private readonly InputAction m_PlayerSETAS_Tiro;
+    private readonly InputAction m_PlayerSETAS_Skill01;
+    private readonly InputAction m_PlayerSETAS_Skill02;
+    private readonly InputAction m_PlayerSETAS_Skill03;
+    public struct PlayerSETASActions
+    {
+        private @ActionInputPlayer m_Wrapper;
+        public PlayerSETASActions(@ActionInputPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_PlayerSETAS_Move;
+        public InputAction @Tiro => m_Wrapper.m_PlayerSETAS_Tiro;
+        public InputAction @Skill01 => m_Wrapper.m_PlayerSETAS_Skill01;
+        public InputAction @Skill02 => m_Wrapper.m_PlayerSETAS_Skill02;
+        public InputAction @Skill03 => m_Wrapper.m_PlayerSETAS_Skill03;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerSETAS; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerSETASActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerSETASActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerSETASActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerSETASActionsCallbackInterfaces.Add(instance);
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
+            @Tiro.started += instance.OnTiro;
+            @Tiro.performed += instance.OnTiro;
+            @Tiro.canceled += instance.OnTiro;
+            @Skill01.started += instance.OnSkill01;
+            @Skill01.performed += instance.OnSkill01;
+            @Skill01.canceled += instance.OnSkill01;
+            @Skill02.started += instance.OnSkill02;
+            @Skill02.performed += instance.OnSkill02;
+            @Skill02.canceled += instance.OnSkill02;
+            @Skill03.started += instance.OnSkill03;
+            @Skill03.performed += instance.OnSkill03;
+            @Skill03.canceled += instance.OnSkill03;
+        }
+
+        private void UnregisterCallbacks(IPlayerSETASActions instance)
+        {
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
+            @Tiro.started -= instance.OnTiro;
+            @Tiro.performed -= instance.OnTiro;
+            @Tiro.canceled -= instance.OnTiro;
+            @Skill01.started -= instance.OnSkill01;
+            @Skill01.performed -= instance.OnSkill01;
+            @Skill01.canceled -= instance.OnSkill01;
+            @Skill02.started -= instance.OnSkill02;
+            @Skill02.performed -= instance.OnSkill02;
+            @Skill02.canceled -= instance.OnSkill02;
+            @Skill03.started -= instance.OnSkill03;
+            @Skill03.performed -= instance.OnSkill03;
+            @Skill03.canceled -= instance.OnSkill03;
+        }
+
+        public void RemoveCallbacks(IPlayerSETASActions instance)
+        {
+            if (m_Wrapper.m_PlayerSETASActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerSETASActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerSETASActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerSETASActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerSETASActions @PlayerSETAS => new PlayerSETASActions(this);
+
+    // PlayerCONTROLE
+    private readonly InputActionMap m_PlayerCONTROLE;
+    private List<IPlayerCONTROLEActions> m_PlayerCONTROLEActionsCallbackInterfaces = new List<IPlayerCONTROLEActions>();
+    private readonly InputAction m_PlayerCONTROLE_Move;
+    private readonly InputAction m_PlayerCONTROLE_Tiro;
+    private readonly InputAction m_PlayerCONTROLE_Skill01;
+    private readonly InputAction m_PlayerCONTROLE_Skill02;
+    private readonly InputAction m_PlayerCONTROLE_Skill03;
+    public struct PlayerCONTROLEActions
+    {
+        private @ActionInputPlayer m_Wrapper;
+        public PlayerCONTROLEActions(@ActionInputPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_PlayerCONTROLE_Move;
+        public InputAction @Tiro => m_Wrapper.m_PlayerCONTROLE_Tiro;
+        public InputAction @Skill01 => m_Wrapper.m_PlayerCONTROLE_Skill01;
+        public InputAction @Skill02 => m_Wrapper.m_PlayerCONTROLE_Skill02;
+        public InputAction @Skill03 => m_Wrapper.m_PlayerCONTROLE_Skill03;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerCONTROLE; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerCONTROLEActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerCONTROLEActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerCONTROLEActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerCONTROLEActionsCallbackInterfaces.Add(instance);
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
+            @Tiro.started += instance.OnTiro;
+            @Tiro.performed += instance.OnTiro;
+            @Tiro.canceled += instance.OnTiro;
+            @Skill01.started += instance.OnSkill01;
+            @Skill01.performed += instance.OnSkill01;
+            @Skill01.canceled += instance.OnSkill01;
+            @Skill02.started += instance.OnSkill02;
+            @Skill02.performed += instance.OnSkill02;
+            @Skill02.canceled += instance.OnSkill02;
+            @Skill03.started += instance.OnSkill03;
+            @Skill03.performed += instance.OnSkill03;
+            @Skill03.canceled += instance.OnSkill03;
+        }
+
+        private void UnregisterCallbacks(IPlayerCONTROLEActions instance)
+        {
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
+            @Tiro.started -= instance.OnTiro;
+            @Tiro.performed -= instance.OnTiro;
+            @Tiro.canceled -= instance.OnTiro;
+            @Skill01.started -= instance.OnSkill01;
+            @Skill01.performed -= instance.OnSkill01;
+            @Skill01.canceled -= instance.OnSkill01;
+            @Skill02.started -= instance.OnSkill02;
+            @Skill02.performed -= instance.OnSkill02;
+            @Skill02.canceled -= instance.OnSkill02;
+            @Skill03.started -= instance.OnSkill03;
+            @Skill03.performed -= instance.OnSkill03;
+            @Skill03.canceled -= instance.OnSkill03;
+        }
+
+        public void RemoveCallbacks(IPlayerCONTROLEActions instance)
+        {
+            if (m_Wrapper.m_PlayerCONTROLEActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerCONTROLEActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerCONTROLEActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerCONTROLEActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerCONTROLEActions @PlayerCONTROLE => new PlayerCONTROLEActions(this);
+    public interface IPlayerWASDActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnTiro(InputAction.CallbackContext context);
-        void OnDash(InputAction.CallbackContext context);
+        void OnSkill01(InputAction.CallbackContext context);
+        void OnSkill02(InputAction.CallbackContext context);
+        void OnSkill03(InputAction.CallbackContext context);
+    }
+    public interface IPlayerSETASActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnTiro(InputAction.CallbackContext context);
+        void OnSkill01(InputAction.CallbackContext context);
+        void OnSkill02(InputAction.CallbackContext context);
+        void OnSkill03(InputAction.CallbackContext context);
+    }
+    public interface IPlayerCONTROLEActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnTiro(InputAction.CallbackContext context);
+        void OnSkill01(InputAction.CallbackContext context);
+        void OnSkill02(InputAction.CallbackContext context);
+        void OnSkill03(InputAction.CallbackContext context);
     }
 }

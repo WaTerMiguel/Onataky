@@ -59,37 +59,9 @@ public class FuriaSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && podeAtacar == true && podeUsarSkill[0] && atualFuria >= gastoFuriaAtaques[0])
-        {
-            player.podeTrocarDeAnimacao = false;
-            player.anim.Play("Skill01");
-            player.speedAtual = player.speed * 0.8f;
-            podeAtacar = false;
-            podeUsarSkill[0] = false;
-            ataqueMachado[1].SetActive(true);
-            Skill(gastoFuriaAtaques[0]);
-            StartCoroutine(TempoGiro());
-        }
+        #region AttackBasico
 
-        if (Input.GetKeyDown(KeyCode.E) && podeAtacar == true && podeUsarSkill[1] && atualFuria >= gastoFuriaAtaques[1])
-        {
-            if (player.target != null)
-            {
-                player.VirandoParaInimigo();
-            }
-            player.podeAndar = false;
-            player.anim.Play("Skill02");
-            podeAtacar = false;
-            podeUsarSkill[1] = false;
-            Skill(gastoFuriaAtaques[1]);
-            if (HabilidadeUsada != null)
-            {
-                HabilidadeUsada(1, tempoRecarga[1]);
-            }
-
-        }
-
-        if (actions.input.Player.Tiro.WasPressedThisFrame() && podeAtacar && qualAtaque < 3)
+        if (actions.AttackButtonDown() && podeAtacar && qualAtaque < 3)
         {
             player.anim.Play(player.normalAttacks[qualAtaque]);
             qualAtaque += 1;
@@ -108,6 +80,46 @@ public class FuriaSystem : MonoBehaviour
                 player.rb.AddForce(transform.forward * (player.speed * 1.2f) * 0.6f, ForceMode.Impulse);
             }
         }
+
+        #endregion
+
+        #region Skill01
+
+        if (actions.Skill01ButtonDown() && podeAtacar == true && podeUsarSkill[0] && atualFuria >= gastoFuriaAtaques[0])
+        {
+            player.podeTrocarDeAnimacao = false;
+            player.anim.Play("Skill01");
+            player.speedAtual = player.speed * 0.8f;
+            podeAtacar = false;
+            podeUsarSkill[0] = false;
+            ataqueMachado[1].SetActive(true);
+            Skill(gastoFuriaAtaques[0]);
+            StartCoroutine(TempoGiro());
+        }
+
+        #endregion
+
+        #region Skill02
+
+        if (actions.Skill02ButtonDown() && podeAtacar == true && podeUsarSkill[1] && atualFuria >= gastoFuriaAtaques[1])
+        {
+            if (player.target != null)
+            {
+                player.VirandoParaInimigo();
+            }
+            player.podeAndar = false;
+            player.anim.Play("Skill02");
+            podeAtacar = false;
+            podeUsarSkill[1] = false;
+            Skill(gastoFuriaAtaques[1]);
+            if (HabilidadeUsada != null)
+            {
+                HabilidadeUsada(1, tempoRecarga[1]);
+            }
+
+        }
+
+        #endregion
 
         if (atualFuria >= maxFuria / 2)
         {

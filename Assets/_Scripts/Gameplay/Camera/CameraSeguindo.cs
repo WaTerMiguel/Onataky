@@ -8,6 +8,6 @@ public class CameraSeguindo : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(target.position, transform.position, veloc);
+        transform.position = Vector3.Lerp(target.position + reposicao, transform.position, veloc);
     }
 }

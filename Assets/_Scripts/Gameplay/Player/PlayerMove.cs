@@ -10,10 +10,10 @@ public class PlayerMove : MonoBehaviour
 
     [Header("Valores de Movimento")]
     public float speed, speedAtual;
-    private Vector3 MoveValue;
     public GameObject target;
     public bool podeAndar = true;
     public Vector2 direciton;
+    Vector2 value;
 
     [Header("Dash")]
     public bool dashPeloMouse = false;
@@ -33,34 +33,29 @@ public class PlayerMove : MonoBehaviour
         speedAtual = speed;
     }
 
-
-
-
     private void FixedUpdate()
     {
         Movimento();
     }
 
-
     private void Update()
     {
-        MoveValue.x = actions.input.Player.Move.ReadValue<Vector2>().x;
-        MoveValue.z = actions.input.Player.Move.ReadValue<Vector2>().y;
-
+        value = actions.MoveValue();
     }
 
     void Movimento()
     {
         if (podeAndar)
         {
-
-            rb.velocity = new Vector3(MoveValue.x * speedAtual, rb.velocity.y, MoveValue.z * speedAtual);
+            rb.velocity = new Vector3(value.x * speedAtual, rb.velocity.y, value.y * speedAtual);
 
             if (podeTrocarDeAnimacao)
             {
-                if (MoveValue != Vector3.zero)
+                if (value != Vector2.zero)
                 {
-                    transform.forward = MoveValue;
+                    Vector3 forward = new Vector3(value.x, 0f, value.y);
+
+                    transform.forward = forward;
                     anim.SetBool("estaAndando", true);
                 }
                 else
