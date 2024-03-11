@@ -9,11 +9,14 @@ public class PlayerMove : MonoBehaviour
     public Animator anim;
 
     [Header("Valores de Movimento")]
-    public float speed, speedAtual;
+    public float speed;
+    public float speedAtual;
     public GameObject target;
     public bool podeAndar = true;
     public Vector2 direciton;
     Vector2 value;
+    [SerializeField] public float smoothVirar = 0.065f;
+    [SerializeField] private Vector3 velocidade = Vector3.zero;
 
     [Header("Dash")]
     public bool dashPeloMouse = false;
@@ -55,7 +58,7 @@ public class PlayerMove : MonoBehaviour
                 {
                     Vector3 forward = new Vector3(value.x, 0f, value.y);
 
-                    transform.forward = forward;
+                    transform.forward = Vector3.SmoothDamp(transform.forward, forward, ref velocidade, smoothVirar);
                     anim.SetBool("estaAndando", true);
                 }
                 else
@@ -65,6 +68,12 @@ public class PlayerMove : MonoBehaviour
             }
 
         }
+    }
+
+    public void PararMovimento()
+    {
+        podeAndar = false;
+        rb.velocity = Vector3.zero;
     }
 
     public void VirandoParaInimigo()

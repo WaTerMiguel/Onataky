@@ -177,21 +177,21 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
         },
         {
             ""name"": ""PlayerSETAS"",
-            ""id"": ""6be11fba-2cdd-4dc0-9565-1787b8f2bca4"",
+            ""id"": ""42f229b4-21c1-4717-8de4-0a3fb9cde2f7"",
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Button"",
-                    ""id"": ""617996c0-1049-4f37-b7cb-7a5b03309aa5"",
-                    ""expectedControlType"": ""Button"",
+                    ""type"": ""Value"",
+                    ""id"": ""e58acdcb-7a88-48c8-94fe-2c3d27e0b59d"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Tiro"",
                     ""type"": ""Button"",
-                    ""id"": ""40a730d6-8b56-4ea2-8695-acbe5ddfa2b7"",
+                    ""id"": ""c30345cc-bddf-4835-9ff7-a61022e94b59"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -200,7 +200,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Skill01"",
                     ""type"": ""Button"",
-                    ""id"": ""e7c5fa8b-1e9f-4275-84e1-d39d1df9d592"",
+                    ""id"": ""0b6bf9ef-ca81-43b8-8c16-ea16d336bc1d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -209,7 +209,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Skill02"",
                     ""type"": ""Button"",
-                    ""id"": ""309b3ba1-8972-4d10-83c1-e310a386bd4a"",
+                    ""id"": ""8529954c-2823-4fae-9984-e85b9c3d30c0"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -218,7 +218,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Skill03"",
                     ""type"": ""Button"",
-                    ""id"": ""50b0b566-1667-4a86-a0bf-61f786c57c04"",
+                    ""id"": ""7a1523d4-f581-47fb-b4d8-45e8d5cdc682"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -227,74 +227,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""Setas"",
-                    ""id"": ""7f9ae56b-8e0e-43b8-8a8e-ca7afef26fc4"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""c3ed081f-4572-44a3-aab4-2eaff605e6c1"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""ab9282c5-7397-4f94-b7e5-afaafe14d6e4"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""96141157-6ffc-4b52-9126-12c66998d898"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""a865a70e-b8bf-4349-a12b-4527230b608b"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
-                    ""id"": ""2714bd63-768e-4f9d-80de-f126b565c2a9"",
-                    ""path"": ""<Keyboard>/numpad1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Tiro"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b3d42d4b-0290-43cc-8cfa-13bf0ae0d262"",
+                    ""id"": ""5c59c09b-01ff-4d39-b22d-48272e3fcf27"",
                     ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -305,7 +239,18 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""3735b00a-191d-4910-b695-ee2a648c723e"",
+                    ""id"": ""0a2b8a75-c803-40fa-a989-83277a860506"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tiro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8c7edebd-aa29-4314-a14f-96a6346fe572"",
                     ""path"": ""<Keyboard>/u"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -316,18 +261,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""dcf0630c-1799-4df6-82ac-7e102e8e7f0a"",
-                    ""path"": ""<Keyboard>/numpad4"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Skill01"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""af009753-d958-441d-9329-98b1f27dddbc"",
+                    ""id"": ""1d464dbe-e41b-4e09-a16f-3b09c4a6b86c"",
                     ""path"": ""<Keyboard>/i"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -338,7 +272,84 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""afa96108-561b-4e14-9ade-274009f3e7eb"",
+                    ""id"": ""d7efb7ff-3cd2-45f0-9287-05b3f5fee936"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Setas"",
+                    ""id"": ""190ef91e-5fa6-414f-8e5a-72817d0dc753"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""ca71338b-9300-4d8f-b615-25f74e4ee67e"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""7544cdf2-5db2-4706-a845-c00456837e8d"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""4ea547fe-d911-496a-bc19-08c34056e343"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""5f5bc4e0-b67c-470e-87c3-680fdd30b4c2"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2631827e-d8e0-46f4-9823-5c548d24b16b"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f75a9257-02a6-4e61-9fc0-1aa273afd5c5"",
                     ""path"": ""<Keyboard>/numpad5"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -349,18 +360,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""07f727f4-be70-43ad-832e-febb21ec0c65"",
-                    ""path"": ""<Keyboard>/o"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Skill03"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""eef1aea1-524f-4dd7-926f-266f2dd7b8d6"",
+                    ""id"": ""6378f907-6114-4d9f-af5d-5d9c80540d08"",
                     ""path"": ""<Keyboard>/numpad6"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -373,12 +373,12 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
         },
         {
             ""name"": ""PlayerCONTROLE"",
-            ""id"": ""a4e145d7-98a6-43e7-95d2-c3397c079858"",
+            ""id"": ""c0d1c1a0-3fbb-4966-8b93-48605a65dc49"",
             ""actions"": [
                 {
                     ""name"": ""Move"",
                     ""type"": ""Value"",
-                    ""id"": ""d11fdab6-5dcb-4fb7-8cfa-5133fcd4909c"",
+                    ""id"": ""c7e8ea5f-4e09-4347-a69b-d3473d1a8c7e"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -387,7 +387,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Tiro"",
                     ""type"": ""Button"",
-                    ""id"": ""6ccf3fcf-a35b-43a8-89af-b1289bfbe1f1"",
+                    ""id"": ""f45a3ccb-5dc2-4ded-99b0-707900353d70"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -396,7 +396,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Skill01"",
                     ""type"": ""Button"",
-                    ""id"": ""83f441ca-9dd3-4959-a6d3-fc132fce5dd6"",
+                    ""id"": ""73270f74-9fac-466f-ad2f-85d98b01f423"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -405,7 +405,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Skill02"",
                     ""type"": ""Button"",
-                    ""id"": ""d3023aa2-8233-47c5-9e99-01176b8d7401"",
+                    ""id"": ""25aacc85-7c2b-44d5-a601-ad2ad83acfd1"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -414,7 +414,7 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Skill03"",
                     ""type"": ""Button"",
-                    ""id"": ""f892db76-5ce0-46c8-b942-e1a1644a7fd5"",
+                    ""id"": ""5df9ff6b-9ed0-4607-aebf-f6d5c0366719"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -423,8 +423,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""Joystick"",
-                    ""id"": ""7793977e-c2db-4c03-b0fb-2f30df4e6491"",
+                    ""name"": ""WASD"",
+                    ""id"": ""5dad2955-9c90-4b83-8aa5-9e91417c1027"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -435,8 +435,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""b14b0bb5-4b9c-454b-ba0d-73429155bc3e"",
-                    ""path"": ""<Joystick>/stick/up"",
+                    ""id"": ""75ccb747-5393-4f35-a500-391fc2e7196e"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -446,8 +446,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""7018c8ab-fb67-4d10-bd55-e5c929ea6aa5"",
-                    ""path"": ""<Joystick>/stick/down"",
+                    ""id"": ""4a54fab0-3782-4255-87e4-7679db1c4b1f"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -457,8 +457,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""50f40e87-d220-4e65-be11-edd16dbe80fc"",
-                    ""path"": ""<Joystick>/stick/left"",
+                    ""id"": ""8a7c6d97-7d60-4501-b620-b0821eb9d1a4"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -468,8 +468,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""7fe4841e-569a-4efa-8db5-66d9cad4feca"",
-                    ""path"": ""<Joystick>/stick/right"",
+                    ""id"": ""ff81ae4b-d6ed-4f9e-93ce-012adc5e7454"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -479,8 +479,8 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""cdfc33c6-7d5a-4b1c-b86d-6cc3b3d48727"",
-                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button4"",
+                    ""id"": ""88a33fb2-83fe-421d-b161-913b695424d2"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -490,8 +490,30 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""941eaf23-3e22-438a-b570-717508a79bef"",
-                    ""path"": """",
+                    ""id"": ""3bcfec48-1257-4c30-8f5b-607f63d6aab8"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tiro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""36eea1d0-9e10-4fc3-ab83-d9e06e4fbfdf"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tiro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""11e8a624-c26f-4f42-9aff-da2fdd375a29"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -501,8 +523,19 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a07d8e8e-3a0b-4f3b-a200-51c751469ea8"",
-                    ""path"": """",
+                    ""id"": ""4d93b0a7-90c1-49bb-ba1d-13271d4a6b86"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1dc72dcb-26cb-4f47-b25a-dd0c49ebb3e2"",
+                    ""path"": ""<Keyboard>/t"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -512,11 +545,187 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7c07a706-8c7a-4d9a-971c-c9f90a7de946"",
+                    ""id"": ""3f22a0bc-e764-40f9-bae2-8aef1b627920"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""227aa41e-2620-48c8-9426-e5b50727c53b"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""40ecaf81-3e35-4929-983e-f904987a3b77"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Setas"",
+                    ""id"": ""f1b4a257-8fc9-4eaa-b831-9bd3c19ef576"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""4aa27969-5805-48c1-b5ec-a6e566b6483c"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e5b091ea-d7b9-41ec-8571-faa23a54233e"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""24b15494-ce97-4605-b151-4f0ceefeeb95"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""c81c10c3-78c7-49a7-a685-b429ca5c80b3"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d211d613-0c6a-4af5-b7e8-8ada59cd6549"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d3580fbf-1849-4b5f-ba72-fa954cf1c83c"",
+                    ""path"": ""<Keyboard>/numpad5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dbdc9c5c-e5bd-4a34-a770-1b89c4d0323d"",
+                    ""path"": ""<Keyboard>/numpad6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill03"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac8e0f2e-bc99-47a5-bf47-2fe3e00eaddf"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controles"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b3f7b8f-f2fe-467a-b0b9-12448dda020e"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controles"",
+                    ""action"": ""Tiro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24f17dce-f267-4472-bd3c-fe7d5eb55d2b"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
+                    ""action"": ""Tiro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""deb33002-d8a6-41db-b12c-131320b12cc7"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controles"",
+                    ""action"": ""Skill01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6641ae8a-b507-40b0-91f7-ac238aa90e16"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controles"",
+                    ""action"": ""Skill02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4817957a-9444-42f1-9260-bc961278f9a8"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controles"",
                     ""action"": ""Skill03"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -524,7 +733,35 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Teclado"",
+            ""bindingGroup"": ""Teclado"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Controles"",
+            ""bindingGroup"": ""Controles"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // PlayerWASD
         m_PlayerWASD = asset.FindActionMap("PlayerWASD", throwIfNotFound: true);
@@ -838,6 +1075,24 @@ public partial class @ActionInputPlayer: IInputActionCollection2, IDisposable
         }
     }
     public PlayerCONTROLEActions @PlayerCONTROLE => new PlayerCONTROLEActions(this);
+    private int m_TecladoSchemeIndex = -1;
+    public InputControlScheme TecladoScheme
+    {
+        get
+        {
+            if (m_TecladoSchemeIndex == -1) m_TecladoSchemeIndex = asset.FindControlSchemeIndex("Teclado");
+            return asset.controlSchemes[m_TecladoSchemeIndex];
+        }
+    }
+    private int m_ControlesSchemeIndex = -1;
+    public InputControlScheme ControlesScheme
+    {
+        get
+        {
+            if (m_ControlesSchemeIndex == -1) m_ControlesSchemeIndex = asset.FindControlSchemeIndex("Controles");
+            return asset.controlSchemes[m_ControlesSchemeIndex];
+        }
+    }
     public interface IPlayerWASDActions
     {
         void OnMove(InputAction.CallbackContext context);

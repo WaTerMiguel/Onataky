@@ -20,6 +20,9 @@ public class PlayerAction : MonoBehaviour
         input.Disable();
     }
 
+
+#region AntigoSistemaDeInputNIS
+    
     public Vector2 MoveValue()
     {
         switch (tipoDeInput)
@@ -59,6 +62,20 @@ public class PlayerAction : MonoBehaviour
 
             case "SETAS":
                 return input.PlayerSETAS.Tiro.IsPressed();
+        }
+        return false;
+    }
+
+    public bool AttackButtonUp()
+    {
+        switch (tipoDeInput)
+        {
+            case "WASD":
+                return input.PlayerWASD.Tiro.WasReleasedThisFrame();
+
+
+            case "SETAS":
+                return input.PlayerSETAS.Tiro.WasReleasedThisFrame();
         }
         return false;
     }
@@ -104,5 +121,7 @@ public class PlayerAction : MonoBehaviour
         }
         return false;
     }
+    
+#endregion
 
 }
