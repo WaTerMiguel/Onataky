@@ -30,9 +30,11 @@ public class PlayerAction : MonoBehaviour
             case "WASD":
                 return input.PlayerWASD.Move.ReadValue<Vector2>();
 
-
             case "SETAS":
                 return input.PlayerSETAS.Move.ReadValue<Vector2>();
+
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Move.ReadValue<Vector2>();
         }
 
         return Vector2.zero;
@@ -45,9 +47,11 @@ public class PlayerAction : MonoBehaviour
             case "WASD":
                 return input.PlayerWASD.Tiro.WasPressedThisFrame();
 
-
             case "SETAS":
                 return input.PlayerSETAS.Tiro.WasPressedThisFrame();
+
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Tiro.WasPressedThisFrame();
         }
         return false;
     }
@@ -59,9 +63,11 @@ public class PlayerAction : MonoBehaviour
             case "WASD":
                 return input.PlayerWASD.Tiro.IsPressed();
 
-
             case "SETAS":
                 return input.PlayerSETAS.Tiro.IsPressed();
+            
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Tiro.IsPressed();
         }
         return false;
     }
@@ -76,6 +82,9 @@ public class PlayerAction : MonoBehaviour
 
             case "SETAS":
                 return input.PlayerSETAS.Tiro.WasReleasedThisFrame();
+
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Tiro.WasReleasedThisFrame();
         }
         return false;
     }
@@ -87,9 +96,11 @@ public class PlayerAction : MonoBehaviour
             case "WASD":
                 return input.PlayerWASD.Skill01.WasPressedThisFrame();
 
-
             case "SETAS":
                 return input.PlayerSETAS.Skill01.WasPressedThisFrame();
+
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Skill01.WasPressedThisFrame();
         }
         return false;
     }
@@ -101,9 +112,11 @@ public class PlayerAction : MonoBehaviour
             case "WASD":
                 return input.PlayerWASD.Skill02.WasPressedThisFrame();
 
-
             case "SETAS":
                 return input.PlayerSETAS.Skill02.WasPressedThisFrame();
+
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Skill02.WasPressedThisFrame();
         }
         return false;
     }
@@ -115,9 +128,11 @@ public class PlayerAction : MonoBehaviour
             case "WASD":
                 return input.PlayerWASD.Skill03.WasPressedThisFrame();
 
-
             case "SETAS":
                 return input.PlayerSETAS.Skill03.WasPressedThisFrame();
+
+            case "CONTROLE":
+                return input.PlayerCONTROLE.Skill03.WasPressedThisFrame();
         }
         return false;
     }

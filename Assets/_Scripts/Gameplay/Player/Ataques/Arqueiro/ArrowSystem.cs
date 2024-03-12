@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class ArrowSystem : MonoBehaviour
 {
-    [SerializeField] PlayerAction actions;
-    [SerializeField] Animator anim;
-    [SerializeField] PlayerMove move;
+    [SerializeField] private PlayerAction actions;
+    [SerializeField] private Animator anim;
+    [SerializeField] private PlayerMove move;
     [SerializeField] private bool inAttack = false;
     [SerializeField] private string animAttack;
     [SerializeField] private string animReload;
     [SerializeField] private string animAttaking;
     [SerializeField] GameObject testeRapidinho;
+    [SerializeField] private Transform localSpawnFlechas;
+    [SerializeField] public GameObject prefFlechas;
+
     private void Start() 
     {
         actions = GetComponent<PlayerAction>();
@@ -41,7 +44,9 @@ public class ArrowSystem : MonoBehaviour
             inAttack = false;
             move.podeAndar = true;
             anim.Play(animAttack);
-            anim.Play("Idle");
+            GameObject flecha = Instantiate(prefFlechas, localSpawnFlechas.position, Quaternion.identity);
+            flecha.transform.forward = transform.forward;
+
             testeRapidinho.SetActive(false);
 
         }
